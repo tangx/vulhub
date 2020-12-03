@@ -1,0 +1,9 @@
+###
+
+POST http://127.0.0.1:8080/v0/cmd
+Content-Type: application/json
+
+{
+    "command":"ls",
+    "args":["-l","-a","-h"]
+}
