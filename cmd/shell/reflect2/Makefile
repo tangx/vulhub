@@ -8,6 +8,6 @@ docker: build
 	docker build -t doslab/vulhub-reflect2:static --build-arg from=gcr.io/distroless/static-debian10 .	\
 		&& docker push doslab/vulhub-reflect2:static
 
-	docker build -t doslab/vulhub-reflect2 --build-arg from=alpine:3.12 . \
+	docker build -t doslab/vulhub-reflect2 --build-arg from=debian:buster . \
 		&& docker push doslab/vulhub-reflect2
 
